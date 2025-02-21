@@ -22,25 +22,25 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Smile 的博客">
-<meta property="og:url" content="https://smilepaopao.github.io/project/index.html">
+<meta property="og:url" content="https://smilepaopao.github.io/project/archives/2025/02/index.html">
 <meta property="og:site_name" content="Smile 的博客">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://smilepaopao.github.io/project/">
+<link rel="canonical" href="https://smilepaopao.github.io/project/archives/2025/02/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Smile 的博客</title>
+  <title>归档 | Smile 的博客</title>
   
 
 
@@ -149,91 +149,49 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content archive">
             
-      
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://smilepaopao.github.io/project/2025/02/21/%E5%88%A9%E7%94%A8github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/project/images/avatar.gif">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Smile 的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/project/2025/02/21/%E5%88%A9%E7%94%A8github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">利用github建立个人博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2025-02-21 22:22:42 / 修改时间：22:56:09" itemprop="dateCreated datePublished" datetime="2025-02-21T22:22:42+08:00">2025-02-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/project/categories/%E6%94%BB%E7%95%A5/" itemprop="url" rel="index"><span itemprop="name">攻略</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 1 篇日志。 继续努力。</span>
+      </div>
 
       
-          <p>基本原理是利用hexo，按照配置项生成静态网页，然后推送到GitHub个人库 {username}.github.io ，当访问GitHub Pages时会读取这个库里面的index.html，即个人博客主页。</p>
-<h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1 环境配置"></a>1 环境配置</h2><ul>
-<li>安装node-js<br><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/%60">https://nodejs.org/zh-cn/download/`</a></li>
-<li>安装hexo<br><code>npm install -g hexo-cli</code><br><code>hexo init &#123;name&#125;</code></li>
-<li>下载hexo主题到theme&#x2F;主题名</li>
-<li>安装git，注册github<br><a target="_blank" rel="noopener" href="https://git-scm.cn/downloads">Git - 下载 - Git 版本控制系统</a><br><code>github.com</code></li>
-</ul>
-<h2 id="2-Hexo配置"><a href="#2-Hexo配置" class="headerlink" title="2 Hexo配置"></a>2 Hexo配置</h2><ul>
-<li>_config.yml</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">theme: xxxx</span><br><span class="line">deploy:</span><br><span class="line">	  type: git</span><br><span class="line">	  repo: git@github.com:SmilePaopao/SmilePaopao.github.io.git</span><br><span class="line">	  branch: main</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-Hexo使用"><a href="#3-Hexo使用" class="headerlink" title="3 Hexo使用"></a>3 Hexo使用</h2><ul>
-<li>hexo help 获取帮助<br><code>hexo new &quot;My New Post&quot;</code><br><code>hexo server</code><br><code>hexo generate</code><br><code>hexo deploy</code></li>
-</ul>
-<p>其他的配置参考链接：<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1532909">超全面！如何用 GitHub 从零开始搭建一个博客 ？-腾讯云开发者社区-腾讯云</a></p>
-
-      
+    <div class="collection-year">
+      <span class="collection-header">2025</span>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2025-02-21T22:22:42+08:00"
+              content="2025-02-21">
+          02-21
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/project/2025/02/21/%E5%88%A9%E7%94%A8github%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
+            <span itemprop="name">利用github建立个人博客</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
 
   
 
